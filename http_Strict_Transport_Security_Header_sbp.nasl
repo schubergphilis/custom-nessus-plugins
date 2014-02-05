@@ -25,7 +25,8 @@ SSL negotiation warnings." );
   script_set_attribute(attribute:"solution", value:
 "The following header needs to be set on all the pages of the web-application:
 
-Strict-Transport-Security: max-age=16070400;");
+Strict-Transport-Security: max-age=16070400;
+Be aware that you need a web-server running on port 443 when you set this header. If you don't have it and apply this fix your website will not be available anymore ^^");
  script_set_attribute(attribute:"risk_factor", value: "Medium" );
 
  script_set_attribute(attribute:"see_also", value:"http://en.wikipedia.org/wiki/Strict-Transport-Security");
